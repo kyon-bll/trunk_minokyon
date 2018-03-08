@@ -17,14 +17,26 @@ class IndexView(generic.TemplateView):
             return render(request, 'index/welcome.html', context)
         else:
             self.username = request.session['username']
-            utils.create_user_contribution_json(self.username)
+            self.contribution = utils.get_7days_user_contribution(self.username)
             return super().get(request, *args, **kwargs)
 
     # context
     @property
     def geek_point(self):
-        contribution = utils.get_7days_user_contribution(self.username)
-        return round(contribution ** math.log(530000, 70))
+        return round(self.contribution ** math.log(530000, 70))
+
+    @property
+    def geek_rank(self):
+        if self.geek_point == 0:
+            return 0  # 0
+        elif self.geek_point < 5000:
+            return 1  # 1 - 15
+        elif self.geek_point < 100000:
+            return 2  # 16 - 40
+        elif self.geek_point < 530000:
+            return 3  # 40 - 69
+        else:
+            return 4  # 70 -
 
 
 # github から返ってきたコードを用いて、
