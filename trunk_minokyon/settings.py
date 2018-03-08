@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'users'
 ]
 
 MIDDLEWARE = [
@@ -66,10 +64,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                # 通知用 コンテキストプロセッサー
-                # 'reports.notification_context_processors.notification',
             ],
-            'debug': True,  # 追加したお
         },
     },
 ]
@@ -126,6 +121,17 @@ USE_TZ = True
 # =================== #
 # add below statement #
 # =================== #
+
+INSTALLED_APPS += [
+    'users',
+]
+
+# login してないと / にとばされる
+MIDDLEWARE += [
+    'middleware.login_required.LoginRequiredMiddleware',
+]
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = '/static/'
