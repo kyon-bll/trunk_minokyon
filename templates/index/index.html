@@ -1,4 +1,39 @@
-<div>you are {{ view.username }}</div>
-<div>your geek point is {{ view.geek_point }}</div>
-<div>your geek rank is {{ view.geek_rank }}</div>
-<a href="{% url 'index:logout' %}">logout</a>
+{% extends 'base.html' %}
+
+{% block content %}
+<div>{{ view.username }}</div>
+  <div class="c-container--main">
+    <div class="c-rank">
+      <span class="c-rank--point">(<a href="">??</a>)</span>
+      <img class="c-bg c-bg__rank" src="/static/img/rank_{{ view.geek_rank }}.png"></img>
+      {{ view.geek_rank_name }}
+    </div>
+    <div class="c-rank--point">
+      (<a href="">??</a>) ギークポイント: {{ view.geek_point }}
+    </div>
+  </div>
+
+  <div class="c-container--list">
+
+    <div class="c-list">
+
+      <div class="c-list--item">
+
+        <p class="ribbon4 c-list--item__available"><i class="fa fa-fw fa-circle-o" aria-hidden="true"></i>コナモン</p>
+
+      </div>
+
+      <div class="c-list--item">
+
+        <p class="ribbon4 c-list--item__available"><i class="fa fa-fw fa-circle-o" aria-hidden="true"></i>オモロイ</p>
+
+      </div>
+
+      <div class="c-list--item">
+        
+        <p class="ribbon4 c-list--item__unavailable"><i class="fa fa-fw fa-times" aria-hidden="true"></i>アツマロ</p>
+
+      </div>
+
+    </div>
+{% endblock %}

@@ -4,13 +4,13 @@
 .ribbon4 {
     display: inline-block;
     position: relative;
-    height: 60px;/*高さ*/
-    width: 250px;
-    line-height: 60px;/*高さ*/
+    height: 10vh;/*高さ*/
+    width: 60vw;
+    line-height: 10vh;/*高さ*/
     vertical-align: middle;
     text-align: left;
     padding: 0 40px 0 18px;/*文字の左右の余白*/
-    font-size: 18px;/*文字サイズ*/
+    font-size: 90px;/*文字サイズ*/
     background: #FFF;/*背景色*/
     color: black;/*文字色*/
     box-sizing: border-box;
@@ -28,7 +28,7 @@
 .ribbon4:after {
     top: 0;
     right: 0;
-    border-width: 30px 15px 30px 0px;
+    border-width: 5vh 5vw 5vh 0px;
     border-color: transparent #FFD100 transparent transparent;
     border-style: solid;
 }

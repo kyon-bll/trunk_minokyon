@@ -38,6 +38,19 @@ class IndexView(generic.TemplateView):
         else:
             return 4  # 70 -
 
+    @property
+    def geek_rank_name(self):
+        if self.geek_rank == 0:
+            return 'ぎーくやあらへん'
+        elif self.geek_rank == 1:
+            return 'しょしんしゃぎーく'
+        elif self.geek_rank == 2:
+            return 'そこそこぎーく'
+        elif self.geek_rank == 3:
+            return 'いっちょまえぎーく'
+        elif self.geek_rank == 4:
+            return 'どえらいぎーく！！'
+
 
 # github から返ってきたコードを用いて、
 # access トークン取得
