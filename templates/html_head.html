@@ -1,0 +1,18 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}">
+  {% block head %}
+    <head>
+      <meta charset="UTF-8">
+      <title>オーサカGEEKER</title>
+      <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    </head>
+  {% endblock %}
+
+  <body>
+    {% block body %}{% endblock %}
+
+  </body>
+
+</html>

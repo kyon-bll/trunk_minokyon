@@ -248,3 +248,6 @@ gas/bin
 
 # minono no kasou kankyou directory ignore shitai
 gasenv/
+
+
+.DS_Store

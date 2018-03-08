@@ -1,62 +1,7 @@
-// ---
-// name: Design Sample
-// category: icon
-// ---
-// ## デザインサンプル一覧
-// ```html
-// <div>
-//   <h5>アイコン</h5>
-
-//   <p>
-//     <i class="fa fa-file-text-o fa-3x"></i> height: 36px クイックアクセス
-//   </p>
-
-//   <h5>
-//     <strong>
-//       <i class="fa fa-cog fa-lg" aria-hidden="true"></i> 19px サイドバーの項目
-//     </strong>
-//   </h5>
-//   <p>
-//     <i class="fa fa-sign-out fa-lg"></i> 16px ヘッダー
-//   </p>
-
-//   <p><i class="fa fa-upload" style="height: 14px"></i> 14px 書類管理/インボックス アップロードボタン</p>
-//   <p><i class="fa fa-plus" style="height: 12px"></i> 12px 書類管理/インボックス内のファイル操作ボタン</p>
-// </div><!-- アイコン -->
-// ```
-
-
-.i-reupload-angle {
-    line-height: 180px;
+.fa-circle-o {
+  color: red;
 }
 
-/* ------------------------------------------------- */
-/* アイコン */
-
-.i-check-ok {
-    color: #A4C639;
-}
-
-.i-check-yet, .i-upload-yet{
-    color: #C0C0C0;
-}
-
-.i-upload-ok {
-    color: #A4C639;
-}
-
-.i-card-file-link {
-    font-size: $font-sm-size;
-}
-
-.i-client-staff-info {
-    font-size: $font-sm-size;
-}
-
-.i-task-done {
-    color: #A4C639;
-}
-
-.i-task-undone {
-    color: #c0c0c0;
+.fa-times {
+    color: blue;
 }
