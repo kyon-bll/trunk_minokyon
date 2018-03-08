@@ -1,0 +1,39 @@
+/* リストの装飾 */
+
+
+.ribbon4 {
+    display: inline-block;
+    position: relative;
+    height: 60px;/*高さ*/
+    width: 250px;
+    line-height: 60px;/*高さ*/
+    vertical-align: middle;
+    text-align: left;
+    padding: 0 40px 0 18px;/*文字の左右の余白*/
+    font-size: 18px;/*文字サイズ*/
+    background: #FFF;/*背景色*/
+    color: black;/*文字色*/
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.ribbon4:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+}
+
+.ribbon4:after {
+    top: 0;
+    right: 0;
+    border-width: 30px 15px 30px 0px;
+    border-color: transparent #FFD100 transparent transparent;
+    border-style: solid;
+}
+
+
+.c-list--item__unavailable {
+  background-color: #a9a9a9;
+}
