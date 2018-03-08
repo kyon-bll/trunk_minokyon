@@ -3,7 +3,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^top/', include('login.urls', namespace='login')),
     url(r'^minono/', include('minono.urls', namespace='minono')),
-    url(r'', include('social_django.urls', namespace='social')),
+    url(r'', include('index.urls', namespace='index')),
 ]

@@ -66,8 +66,8 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
 
                 # github アカウント認証
-                'social.apps.django_app.context_processors.backends',
-                'social.apps.django_app.context_processors.login_redirect',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -127,25 +127,8 @@ USE_TZ = True
 # =================== #
 
 INSTALLED_APPS += [
-    'users',
-
-    # github アカウント認証
-    'social_django',
+    'index',
 ]
-AUTHENTICATION_BACKENDS = [
-    'social_core.backends.github.GithubOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
-]
-SOCIAL_AUTH_GITHUB_KEY = 'e24236d1f8b042af6058'
-SOCIAL_AUTH_GITHUB_SECRET = '089b9b25d642e83c56460d05a3646f4153fd04d2'
-
-
-# login してないと /top/ にとばされる
-# MIDDLEWARE += [
-#     'middleware.login_required.LoginRequiredMiddleware',
-# ]
-# LOGIN_URL = '/top/'
-# LOGIN_REDIRECT_URL = '/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = '/static/'
@@ -157,5 +140,3 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 sys.path.insert(0, os.path.join(BASE_DIR, 'modules'))
 
 ALLOWED_HOSTS = ['*']
-
-AUTH_USER_MODEL = 'users.User'
