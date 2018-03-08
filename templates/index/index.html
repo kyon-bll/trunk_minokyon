@@ -1,4 +1,7 @@
 <div>
-  you are {{ request.session.username }}
+  you are {{ username }}
+</div>
+<div>
+  your geek point is {{ view.geek_point }}
 </div>
 <a href="{% url 'index:logout' %}">logout</a>

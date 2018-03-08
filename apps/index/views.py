@@ -1,3 +1,5 @@
+import math
+
 from django.shortcuts import render, redirect
 from django.views import generic
 
@@ -21,7 +23,8 @@ class IndexView(generic.TemplateView):
     # context
     @property
     def geek_point(self):
-        pass
+        contribution = utils.get_7days_user_contribution(self.username)
+        return round(contribution ** math.log(530000, 70))
 
 
 # github から返ってきたコードを用いて、
