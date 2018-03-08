@@ -4,14 +4,15 @@
   <div>{{ view.username }} のギークランク</div>
   <div class="c-container--main">
     <div class="c-rank">
-      <span class="c-rank--point">
-        (<a data-toggle="modal" data-target="#RankDescriptionModal">??</a>)
-      </span>
       <img class="c-bg c-bg__rank" src="/static/img/rank_{{ view.geek_rank }}.png"></img>
       {{ view.geek_rank_name }}
+      <span class="c-rank--point">
+        <a data-toggle="modal" data-target="#RankDescriptionModal"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+      </span>
+
     </div>
     <div class="c-rank--point">
-      ギークポイント: {{ view.geek_point }} (<a href="">??</a>)
+      ギークポイント: {{ view.geek_point }}
     </div>
   </div>
 
