@@ -1,0 +1,5 @@
+from django.views import generic
+
+
+class MinonoIndexView(generic.TemplateView):
+    template_name = 'minono/minono.html'
