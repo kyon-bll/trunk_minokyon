@@ -141,11 +141,11 @@ SOCIAL_AUTH_GITHUB_SECRET = '089b9b25d642e83c56460d05a3646f4153fd04d2'
 
 
 # login してないと /top/ にとばされる
-MIDDLEWARE += [
-    'middleware.login_required.LoginRequiredMiddleware',
-]
-LOGIN_URL = '/top/'
-LOGIN_REDIRECT_URL = '/'
+# MIDDLEWARE += [
+#     'middleware.login_required.LoginRequiredMiddleware',
+# ]
+# LOGIN_URL = '/top/'
+# LOGIN_REDIRECT_URL = '/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = '/static/'
