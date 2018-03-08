@@ -3,7 +3,7 @@ from django.contrib.auth import views as auth_views
 from .forms import LoginForm
 
 urlpatterns = [
-    url(r'in/$',
+    url(r'$',
         auth_views.login,
         {'template_name': 'login/login.html',
          'authentication_form': LoginForm,

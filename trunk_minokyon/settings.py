@@ -130,7 +130,7 @@ INSTALLED_APPS += [
     'users',
 
     # github アカウント認証
-    'social.apps.django_app.default',
+    'social_django',
 ]
 AUTHENTICATION_BACKENDS = [
     'social_core.backends.github.GithubOAuth2',
@@ -140,11 +140,11 @@ SOCIAL_AUTH_GITHUB_KEY = 'e24236d1f8b042af6058'
 SOCIAL_AUTH_GITHUB_SECRET = '089b9b25d642e83c56460d05a3646f4153fd04d2'
 
 
-# login してないと / にとばされる
+# login してないと /top/ にとばされる
 MIDDLEWARE += [
     'middleware.login_required.LoginRequiredMiddleware',
 ]
-LOGIN_URL = '/login/'
+LOGIN_URL = '/top/'
 LOGIN_REDIRECT_URL = '/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
