@@ -1,0 +1,31 @@
+
+.quick-access-container {
+    width: 570px;
+}
+
+.quick-access {
+    display:flex;
+    -ms-flex-pack:distribute;
+    justify-content:space-around;
+    padding: 0;
+}
+
+.quick-access-item {
+    width: 87px;
+    margin: 0;
+    margin-left: 0;
+    padding:0!important;
+}
+
+.quick-access-comingsoon {
+    padding: 15px;
+}
+
+.quick-access-hover {
+    cursor: pointer;
+}
+
+.quick-access-footer {
+    padding-right:0;
+    padding-left:0;
+}

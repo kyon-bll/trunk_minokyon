@@ -1,0 +1,80 @@
+/* tooltip */
+
+/* 表示文字の装飾 */
+
+.c-tooltip__badge {
+  position: relative;
+}
+
+.tooltip1 {
+  cursor: pointer;
+}
+
+
+
+.calendar-tooltip {
+  display: none;
+  /* ボックス要素にする */
+  position: absolute;
+  /* relativeからの絶対位置 */
+  top: 25px; // 300px
+  // left: 532px;
+  font-size: $font-sm-size;
+  color: #494a41;
+  background-color: #FFFFFF;
+  width: 460px!important;
+  padding: 10px;
+  border-radius: 3px;
+  z-index: 100;
+  height: auto;
+  border: solid 2px #DDD;
+  font-weight: normal;
+  height: 300px;
+  overflow-y: scroll;
+
+   &.is-show {
+     display: block;
+     z-index: 100;
+   }
+}
+/* マウスオーバー時にツールチップを表示
+.tooltip1:hover span {
+    display: block;    ボックス要素にする
+    position: absolute;    relativeからの絶対位置
+    top: 25px;
+    font-size: $font-sm-size;
+    color: #494a41;
+    background-color: #FFFFFF;
+    width: auto;
+    padding: 0;
+    border-radius: 3px;
+    z-index:100;
+    height: auto;
+
+}
+
+/* フキダシ部分を作成
+.tooltip1 span:before{
+    content:'';
+    display:block;
+    position:absolute;    relativeからの絶対位置
+    height:0;
+    width:0;
+    top:-13px;
+    left:15px;
+    border:13px transparent solid;
+    border-right-width:0;
+    border-left-color:#51A2C1;
+    transform:rotate(270deg);    傾きをつける
+    -webkit-transform:rotate(270deg);
+    -o-transform:rotate(270deg);
+    z-index:100;
+}
+
+*/
+
+.is-close {
+  float: right;
+  cursor: pointer;
+  color: #333333;
+}

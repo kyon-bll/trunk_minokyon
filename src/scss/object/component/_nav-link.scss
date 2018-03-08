@@ -1,0 +1,17 @@
+.navi-height {
+    padding-top: 15px;
+}
+
+ul.index-name {
+    text-align: right;
+    font-size: $font-sm-size;
+    padding-top: 5px;
+}
+
+.navilink li a:hover {
+    text-decoration: none;
+}
+
+.user-util-menu .tooltip.fade {
+  transition: opacity .15s linear 0s;
+}

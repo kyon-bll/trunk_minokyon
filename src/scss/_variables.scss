@@ -1,0 +1,26 @@
+// Size
+$document-width--small: 300px;
+$document-width--medium: 768px;
+$document-width--large: 1000px;
+$document-width--xlarge: 1200px;
+
+
+// Font
+$font-headline: 18px;
+$font-large-size: 14px;
+$font-base-size: 12px;
+$font-sm-size: 10px;
+
+$font-color-base: $color-primary;
+
+// Breakpoints
+$breakpoints: (
+  'small': 'screen and (max-width: #{$document-width--small})',
+  'medium': 'screen and (max-width: #{$document-width--medium})',
+  'large': 'screen and (max-width: #{$document-width--large})',
+  'xlarge': 'screen and (max-width: #{$document-width--xlarge})',
+) !default;
+
+
+// Easing
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);

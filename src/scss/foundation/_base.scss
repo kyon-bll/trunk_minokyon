@@ -1,0 +1,30 @@
+// User's Base Style
+html, body {
+    height: 100%;
+    width: 1263px;
+    margin: 0;
+    font-size: $font-base-size;
+    font-family: $font-jp;
+}
+
+/* モーダル開いたときにパディングできるのを阻止 */
+body {
+    padding-right: 0px !important;
+}
+
+h4, h5 {
+    margin-top: 0px;
+    margin-bottom: 9px;
+}
+
+ol, ul {
+    margin-bottom: 0;
+}
+
+main {
+  display: block;
+}
+
+hr {
+    margin: 0;
+}

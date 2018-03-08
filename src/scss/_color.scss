@@ -1,0 +1,33 @@
+
+
+// ---
+// name: base color
+// category: color
+// ---
+// ## This is base color
+
+// * Base color style.
+// * Use `p` tag.
+
+// ```html
+// <p style="background-color:#205680; color:white;">サイドバー 濃い青 #205680</p>
+// <p style="background-color:#338acc; color:white;">サイドバーホバー時 青 #338acc</p>
+// <p style="background-color:#5bc0de; color:white;">水色 #5bc0de</p>
+// <p style="background-color:#a94442; color:white;">赤 締切案件</p>
+// <p style="background-color:#a94442; color:white; opacity:.65">締切案件ホバー時</p>
+// <p style="background-color:#CCCCCC; color:white;">灰色 締切案件disabled</p>
+// <p style="background-color:#D9EDF4;">カレンダー, 経過情報のactive</p>
+// <p style="background-color:#F5F5F5;">パンくず カレンダーの灰色部分 #F5F5F5</p>
+// <br>
+// <div class="alert alert-info paddingtb0" role="alert">入力完了メッセージ / カレンダー, 経過情報のactive</div>
+// <div class="alert alert-danger paddingtb0" role="alert">エラーメッセージ</div>
+// ```
+
+
+// Color
+$bg-sidebar: #205680;
+$color-primary: #000000;        /*  */
+$color-secondary: #ffffff;
+
+// bg-color
+$bg-sidebar: #205680;

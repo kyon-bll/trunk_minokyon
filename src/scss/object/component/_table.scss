@@ -1,0 +1,47 @@
+/* tableまわり */
+.table {
+  table-layout: fixed;
+  // width: auto;
+}
+
+.table>thead>tr>th {
+  max-width: 196px;
+}
+
+.table>tbody>tr>td {
+  max-width: 196px;
+}
+
+.tablesorter {
+
+}
+
+tablesorter thead tr th{
+
+}
+
+.table-fixed {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-width-not-auto {
+  width: 100%;
+}
+
+.table.j-row-clickable tr {
+  cursor: pointer;
+}
+
+.c-table__no-border {
+  margin-bottom: 20px;
+
+  thead tr th {
+    padding: 2px 10px 2px 0px;
+  }
+
+  tbody tr th {
+    padding: 2px 10px 2px 0px;
+  }
+
+}

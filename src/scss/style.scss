@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+// @import "foundation/_sanitize";
+@import 'vender/_font-awesome.min';
+@import 'vender/_bootstrap';
+@import "foundation/_user-reset";
+
+@import '_color';
+@import '_variables';
+@import "_mixin";
+@import "_placeholder";
+
+@import "foundation/_fonts";
+@import "foundation/_base";
+
+@import "layout/*";
+@import "object/component/*";
+@import "object/project/*";
+@import "object/utility/*";
+
+
+
+// .full{
+// 	padding-top:70px;
+//   height: 100%;
+// }
+
+/* ------------------------------------------------- */
+/* contents */
+// .list-border {
+//   border-top: 1px solid #F4F5F7;
+// }
+
+
+/* ------------------------------------------------- */
+
+/* 書類管理ページ */
+
+// .dfcolumn1,
+// .dfcolumn2 {
+//   width: 70px;
+//   text-align: center;
+// }

@@ -1,0 +1,21 @@
+/* カード内のおりかえし */
+
+.card-body {
+    word-wrap: break-word;
+}
+
+.card-title {
+    max-width: 270px;
+    margin: 0;
+    height: 35px;
+}
+.card-subtitle {
+    max-width: 270px;
+    height: 18px;
+}
+
+.card-text {
+    margin: 0;
+    max-width: 270px;
+    height: 30px;
+}

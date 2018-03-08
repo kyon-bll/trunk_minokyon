@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="../../aigis_assets/css/highlight/okadia.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="../../aigis_assets/css/theme.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="aigis-container">
+      <div class="aigis-sidemenu">
+        <header class="aigis-header"><a href="../../index.html">Styleguide</a></header>
+        <h2 class="aigis-sidemenu__heading">Category</h2>
+        <nav class="aigis-categoryList"><ul data-path-depth="0"><li data-path-depth="0"><a href="../../category/button/index.html" data-tree-current>button</a></li><li data-path-depth="0"><a href="../../category/font/index.html">font</a></li></ul>
+        </nav>
+      </div>
+      <!--
+      h2.aigis-sidemenu__heading Tag
+      nav.aigis-tags.aigis-tagList
+        each tag in config.collection.tag
+          a.aigis-tags__item(class="aigis-tags__item--" + tag, href=root + 'tag/' + tag + '/index.html') 
+      h2.aigis-sidemenu__heading
+        a(href=root + 'color.html') All Colors
+      -->
+      <div class="aigis-contents">
+        <div class="aigis-contents__body">
+          <nav>
+            <h2 class="aigis-module__heading">Components</h2>
+            <ul class="aigis-moduleList">
+              <li class="aigis-moduleList__item"><a href="#base button">base button</a></li>
+            </ul>
+          </nav>
+          <div class="aigis-module">
+            <h2 id="base button" class="aigis-module__heading">base button</h2>
+            <div class="aigis-module__filepath">/src/scss/object/component/_button.scss</div>
+            <ul class="aigis-tags">
+            </ul><h2 id="this-is-base-button">This is base button</h2>
+<ul>
+<li>Base button style.</li>
+<li>Use <code>a</code> or <code>button</code> tag.</li>
+</ul>
+<div class="aigis-preview">
+  <div>
+    <h5>ボタン</h5>
+    <h6>サイズ可変(文字数によって横幅が変わる)</h6>
+    <div> <button class="btn btn-info btn-sm">ボタン基本色</button> <button class="btn btn-info btn-sm disabled">ボタン基本色</button> </div>
+    <div> <button class="btn btn-primary btn-sm">データの変更を伴う タスク完了 / 取引先作成</button> <button class="btn btn-primary btn-sm disabled">データの変更を伴う タスク完了 / 取引先作成</button> </div>
+    <div> <button class="btn btn-danger btn-sm">データの削除 案件中断</button> <button class="btn btn-danger btn-sm disabled">データの削除 案件中断</button> </div>
+    <div> <button class="btn btn-default btn-sm">重要度が低い 編集ボタン / キャンセル</button> <button class="btn btn-default btn-sm disabled">重要度が低い 編集ボタン / キャンセル</button> </div>
+    <h6>サイズ可変(外の枠の大きさ 100%) / 助成金パネル</h6> <button class="btn btn-danger p-index__button">
+   <p class="font-sm-size">締切案件</p>
+   <p><span class="font-base-size">103</span>ステップ<span class="font-base-size"> / 17</span>件</p>
+   </button> <a href="" class=disabled>
+   <button class="btn disabled disabled p-index__button">
+   <p class="font-sm-size">締切案件</p>
+   <p><span class="font-base-size">0</span>ステップ<span class="font-base-size"> / 0</span>件</p>
+   </button>
+   </a>
+    <h6>サイズ固定 / 経過情報</h6>
+    <div class="p-progress__task__button">
+        <div class="p-progress__task__button__item"> <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#reference162">参考書類
+
+   </button><button class="btn btn-info btn-sm" data-toggle="modal" data-target="#file-upload162">書類のアップロード
+
+   </button></div>
+        <div class="p-progress__task__button__item__right"> <button class="btn btn-primary btn-sm p-progress__task__complete-button" role="button" aria-pressed="true" data-target="#task-done162"><i class="fa fa-check "></i> タスク完了
+   </button></div>
+    </div>
+</div>
+<!-- ボタン --></div>
+
+<pre><code class="language-html">   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span>ボタン<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h6</span><span class="token punctuation" >></span></span>サイズ可変(文字数によって横幅が変わる)<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h6</span><span class="token punctuation" >></span></span>
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-info btn-sm<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>ボタン基本色<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-info btn-sm disabled<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>ボタン基本色<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-primary btn-sm<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>データの変更を伴う タスク完了 / 取引先作成<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-primary btn-sm disabled<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>データの変更を伴う タスク完了 / 取引先作成<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-danger btn-sm<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>データの削除 案件中断<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-danger btn-sm disabled<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>データの削除 案件中断<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-default btn-sm<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>重要度が低い 編集ボタン / キャンセル<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-default btn-sm disabled<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>重要度が低い 編集ボタン / キャンセル<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h6</span><span class="token punctuation" >></span></span>サイズ可変(外の枠の大きさ 100%) / 助成金パネル<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h6</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-danger p-index__button<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-sm-size<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>締切案件<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base-size<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>103<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >></span></span>ステップ<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base-size<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span> / 17<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >></span></span>件<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span><span class="token punctuation" >"</span></span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span>disabled</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn disabled disabled p-index__button<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-sm-size<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>締切案件<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base-size<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>0<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >></span></span>ステップ<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base-size<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span> / 0<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >></span></span>件<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >></span></span>
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h6</span><span class="token punctuation" >></span></span>サイズ固定 / 経過情報<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h6</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>p-progress__task__button<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>p-progress__task__button__item<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-info btn-sm<span class="token punctuation" >"</span></span> <span class="token attr-name" >data-toggle</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>modal<span class="token punctuation" >"</span></span> <span class="token attr-name" >data-target</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#reference162<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>参考書類
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-info btn-sm<span class="token punctuation" >"</span></span> <span class="token attr-name" >data-toggle</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>modal<span class="token punctuation" >"</span></span> <span class="token attr-name" >data-target</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#file-upload162<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>書類のアップロード
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>p-progress__task__button__item__right<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn-primary btn-sm p-progress__task__complete-button<span class="token punctuation" >"</span></span> <span class="token attr-name" >role</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>button<span class="token punctuation" >"</span></span> <span class="token attr-name" >aria-pressed</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>true<span class="token punctuation" >"</span></span> <span class="token attr-name" >data-target</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#task-done162<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>i</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>fa fa-check <span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>i</span><span class="token punctuation" >></span></span> タスク完了
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+
+   <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+   <span class="token comment" spellcheck="true">&lt;!-- ボタン --></span>
+</code></pre>
+
+          </div>
+          <footer class="aigis-footer">Last update at 2018/02/11 18:57</footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

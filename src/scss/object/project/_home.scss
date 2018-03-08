@@ -1,0 +1,101 @@
+/* ホーム */
+/* n件表示ボタンの上カクってする */
+.home-more-info-btn {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+}
+
+// トップ上部の助成金カテゴリを並べるスタイルとボタンエリアのスタイル
+.home-cat-panel {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 9px;
+  border: 1px solid #ddd;
+
+  &-item {
+    width: 33.3%;
+    min-height: 188px;  // comming soon の高さが潰れるので少し高さを持たせる
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+
+  &-footer {
+    width: 100%;
+  }
+}
+
+.home-panel-padding {
+  padding: 5px;
+}
+
+.home-panel-header {
+  padding: 10px 10px 0;
+}
+
+.home-panel-title {
+  color: #333333!important;
+}
+
+.home-panel-title,
+.home-panel-title + h5 {
+  line-height: 1;
+  font-weight: 500;
+}
+
+.home-panel-title + h6{
+  line-height: 1;
+}
+
+.home-panel-body {
+  position: relative;
+  font-size: $font-sm-size;
+  line-height: 1;
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.home-panel-footer {
+  text-align: right;
+}
+
+.home-progress-padding {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.home-panel-clientstaff {
+    width: 80px;
+    float: left;
+    padding-left: 10px
+}
+
+// トップ下部 クイックアクセス
+.home-quick-access {
+    width: 570px;
+}
+
+// トップ下部 お知らせ
+.home-info {
+    width: 486px;
+    height: 129px;
+    line-height: 10px;
+}
+
+
+/* ------------------------------------------------ */
+/* 新しくかいてくぞ */
+
+.p-index__button {
+    width: 100%;
+    padding: 10px;
+
+    span {
+        font-size: $font-headline;
+        font-weight: 500;
+    }
+}

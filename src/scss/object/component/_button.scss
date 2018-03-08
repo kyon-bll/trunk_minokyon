@@ -1,0 +1,109 @@
+/* ボタン
+
+   .btn-complete {
+   background-color: #3987CC;
+   color: #FFFFFF;
+   }
+
+   .btn-complete:hover {
+   background-color: #459BE6;
+   color: #FFFFFF
+   }
+
+   .btn-upload {
+   background-color: #459BE6;
+   color: #FFFFFF;
+   }
+
+   .btn-upload:hover {
+   background-color: #8ABBE6;
+   color: #FFFFFF;
+   }
+
+*/
+
+/*
+   ---
+   name: base button
+   category: button
+   ---
+
+   ## This is base button
+
+ * Base button style.
+ * Use `a` or `button` tag.
+
+```html
+   <div>
+   <h5>ボタン</h5>
+   <h6>サイズ可変(文字数によって横幅が変わる)</h6>
+
+   <div>
+   <button class="btn btn-info btn-sm">ボタン基本色</button>
+   <button class="btn btn-info btn-sm disabled">ボタン基本色</button>
+   </div>
+
+   <div>
+   <button class="btn btn-primary btn-sm">データの変更を伴う タスク完了 / 取引先作成</button>
+   <button class="btn btn-primary btn-sm disabled">データの変更を伴う タスク完了 / 取引先作成</button>
+   </div>
+
+   <div>
+   <button class="btn btn-danger btn-sm">データの削除 案件中断</button>
+   <button class="btn btn-danger btn-sm disabled">データの削除 案件中断</button>
+   </div>
+
+   <div>
+   <button class="btn btn-default btn-sm">重要度が低い 編集ボタン / キャンセル</button>
+   <button class="btn btn-default btn-sm disabled">重要度が低い 編集ボタン / キャンセル</button>
+   </div>
+
+   <h6>サイズ可変(外の枠の大きさ 100%) / 助成金パネル</h6>
+   <button class="btn btn-danger p-index__button">
+   <p class="font-sm-size">締切案件</p>
+   <p><span class="font-base-size">103</span>ステップ<span class="font-base-size"> / 17</span>件</p>
+   </button>
+
+   <a href="" class=disabled>
+   <button class="btn disabled disabled p-index__button">
+   <p class="font-sm-size">締切案件</p>
+   <p><span class="font-base-size">0</span>ステップ<span class="font-base-size"> / 0</span>件</p>
+   </button>
+   </a>
+
+   <h6>サイズ固定 / 経過情報</h6>
+   <div class="p-progress__task__button">
+   <div class="p-progress__task__button__item">
+
+
+   <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#reference162">参考書類
+
+   </button><button class="btn btn-info btn-sm" data-toggle="modal" data-target="#file-upload162">書類のアップロード
+
+   </button></div>
+   <div class="p-progress__task__button__item__right">
+   <button class="btn btn-primary btn-sm p-progress__task__complete-button" role="button" aria-pressed="true" data-target="#task-done162"><i class="fa fa-check "></i> タスク完了
+   </button></div>
+   </div>
+
+   </div>
+   <!-- ボタン -->
+```
+*/
+.btn-upload,
+.btn-reupload {
+  float: right;
+}
+
+.button-item {
+  text-align: center;
+  width: 125px;
+}
+
+.btn-uploadinbox {
+  text-align: right;
+}
+
+.btn.disabled {
+  opacity: .50;
+}

@@ -1,0 +1,21 @@
+.modal-open,
+.modal {
+    padding-right: 0px !important;
+}
+
+.modal-description {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.modal-icon {
+    color: #205680;
+    padding-left: 0;
+    width: 13%;
+    float: left;
+}
+
+.modal-text {
+    width: 87%;
+    float: left;
+}

@@ -1,0 +1,16 @@
+.wrapper {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #205680;
+}
+
+body > .wrapper {
+    height: auto;
+}
+
+.overwrite-bg {
+    background-color: #FFFFFF;
+    padding-top: 15px;
+}

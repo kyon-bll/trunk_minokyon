@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="../../aigis_assets/css/highlight/okadia.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="../../aigis_assets/css/theme.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="aigis-container">
+      <div class="aigis-sidemenu">
+        <header class="aigis-header"><a href="../../index.html">Styleguide</a></header>
+        <h2 class="aigis-sidemenu__heading">Category</h2>
+        <nav class="aigis-categoryList"><ul data-path-depth="0"><li data-path-depth="0"><a href="../../category/button/index.html">button</a></li><li data-path-depth="0"><a href="../../category/font/index.html" data-tree-current>font</a></li></ul>
+        </nav>
+      </div>
+      <!--
+      h2.aigis-sidemenu__heading Tag
+      nav.aigis-tags.aigis-tagList
+        each tag in config.collection.tag
+          a.aigis-tags__item(class="aigis-tags__item--" + tag, href=root + 'tag/' + tag + '/index.html') 
+      h2.aigis-sidemenu__heading
+        a(href=root + 'color.html') All Colors
+      -->
+      <div class="aigis-contents">
+        <div class="aigis-contents__body">
+          <nav>
+            <h2 class="aigis-module__heading">Components</h2>
+            <ul class="aigis-moduleList">
+              <li class="aigis-moduleList__item"><a href="#base font">base font</a></li>
+            </ul>
+          </nav>
+          <div class="aigis-module">
+            <h2 id="base font" class="aigis-module__heading">base font</h2>
+            <div class="aigis-module__filepath">/src/scss/object/component/_font.scss</div>
+            <ul class="aigis-tags">
+            </ul><h2 id="this-is-base-font">This is base font</h2>
+<ul>
+<li>Base font style.</li>
+<li>Use <code>a</code> or <code>button</code> tag.</li>
+</ul>
+<div class="aigis-preview">
+  <div>
+    <h5>フォントサイズ</h5>
+    <table class="table">
+        <tr>
+            <td>
+                <div class="font-xl">H1Font 18px</div>
+            </td>
+            <td>
+                <div class="font-xl">見出し1</div>
+                <div class="font-xl">ページタイトルが表示されているページのタイトルにのみ用いる(カレンダーページでは、表示期間)</div>
+                <div class="font-xl">例外として、助成金パネルボタンの数字にも用いている</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="font-lg">H2Font 14px</div>
+            </td>
+            <td>
+                <div class="font-lg">見出し2</div>
+                <div class="font-lg">ページの中の大きなくくりで使用</div>
+                <div class="font-lg">助成金グループ サイドバーの項目 クイックアクセスなど</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="font-base">normalFont 12px</div>
+            </td>
+            <td>
+                <div class="font-base">基本サイズ</div>
+                <div class="font-base">本文など、基本的にこのサイズを用いる</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="font-sm">smallFont 10px</div>
+            </td>
+            <td>
+                <div class="font-sm">小サイズ</div>
+                <div class="font-sm">レイアウト的にこのサイズでないといけない場合のみ使用、できるだけ使わないようにレイアウトを組む</div>
+                <div class="font-sm">ホーム/おしらせのリンク カレンダー/締切超過日 サイドバーフッター</div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <div class="font-base">その他</div>
+            </td>
+            <td>
+                <div class="font-base">以下には <strong>太字</strong> を用いる</div>
+                <div class="font-base">フォーム、テーブルの項目名</div>
+                <div class="font-base">カレンダーバッジ</div>
+            </td>
+        </tr>
+    </table>
+    <h5>フォントカラー</h5>
+    <table class="table">
+        <tr>
+            <td style="color:#000000">
+                <h5>基本色(黒)</h5>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h5><a href="#">リンク/クイックアクセス</a></h5>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:#000000; color:#ffffff;">
+                <h5>白</h5>
+            </td>
+        </tr>
+        <tr>
+            <td class="font-red">
+                <h5>警戒色</h5>
+            </td>
+        </tr>
+        <tr>
+            <td class="font-deep-blue">
+                <h5>濃い青</h5>
+            </td>
+        </tr>
+        <tr>
+            <td class="font-light-blue">
+                <h5>薄い青</h5>
+            </td>
+        </tr>
+        <tr>
+            <td class="font-disable">
+                <h5>無効</h5>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- フォントサイズ --></div>
+
+<pre><code class="language-html"><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span>フォントサイズ<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>table</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>table<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-xl<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>H1Font 18px<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-xl<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>見出し1<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-xl<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>ページタイトルが表示されているページのタイトルにのみ用いる(カレンダーページでは、表示期間)<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-xl<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>例外として、助成金パネルボタンの数字にも用いている<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-lg<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>H2Font 14px<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-lg<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>見出し2<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-lg<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>ページの中の大きなくくりで使用<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-lg<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>助成金グループ サイドバーの項目 クイックアクセスなど<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>normalFont 12px<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>基本サイズ<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>本文など、基本的にこのサイズを用いる<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-sm<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>smallFont 10px<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-sm<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>小サイズ<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-sm<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>レイアウト的にこのサイズでないといけない場合のみ使用、できるだけ使わないようにレイアウトを組む<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-sm<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>ホーム/おしらせのリンク カレンダー/締切超過日 サイドバーフッター<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>その他<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>以下には  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>strong</span><span class="token punctuation" >></span></span>太字<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>strong</span><span class="token punctuation" >></span></span>  を用いる<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>フォーム、テーブルの項目名<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-base<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>カレンダーバッジ<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>table</span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span>フォントカラー<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>table</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>table<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token style-attr language-css" ><span class="token attr-name" > <span class="token attr-name" >style</span></span><span class="token punctuation" >="</span><span class="token attr-value" ><span class="token property" >color</span><span class="token punctuation" >:</span><span class="token hexcode" >#000000</span></span><span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span>基本色(黒)<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span>リンク/クイックアクセス<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span><span class="token style-attr language-css" ><span class="token attr-name" > <span class="token attr-name" >style</span></span><span class="token punctuation" >="</span><span class="token attr-value" ><span class="token property" >background-color</span><span class="token punctuation" >:</span><span class="token hexcode" >#000000</span><span class="token punctuation" >;</span> <span class="token property" >color</span><span class="token punctuation" >:</span><span class="token hexcode" >#ffffff</span><span class="token punctuation" >;</span></span><span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span>白<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-red<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span>警戒色<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-deep-blue<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span>濃い青<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-light-blue<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span>薄い青<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>tr</span><span class="token punctuation" >></span></span>
+      <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>td</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>font-disable<span class="token punctuation" >"</span></span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>h5</span><span class="token punctuation" >></span></span>無効<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>h5</span><span class="token punctuation" >></span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>td</span><span class="token punctuation" >></span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>tr</span><span class="token punctuation" >></span></span>
+  <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>table</span><span class="token punctuation" >></span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >></span></span><span class="token comment" spellcheck="true">&lt;!-- フォントサイズ --></span>
+</code></pre>
+
+          </div>
+          <footer class="aigis-footer">Last update at 2018/02/11 18:57</footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

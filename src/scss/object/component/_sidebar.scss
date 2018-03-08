@@ -1,0 +1,22 @@
+#sidebar {
+  width: 153px;
+  padding-left: 6px;
+  z-index: 99;
+  height: 100%;
+  color: #f9fbfd;
+  a {
+    color: #f9fbfd;
+  }
+}
+
+#sidebar-footer a {
+  color: #f9fbfd;
+}
+
+#sidebar .nav li > a:hover {
+  background-color: #338acc;
+}
+
+.sidebar-footer-line-height {
+  line-height: 15px;
+}

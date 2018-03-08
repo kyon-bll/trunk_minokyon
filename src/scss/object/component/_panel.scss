@@ -1,0 +1,74 @@
+/* panel */
+.panel {
+    margin: 0;
+}
+
+.panel-default {
+    margin: 5px;
+    padding:10px;
+}
+
+.panel-box {
+    margin: 9px;
+    padding: 10px;
+    border-color: #ddd;
+}
+
+.panel-minheight {
+    min-height: 570px;
+}
+
+.panel-container {
+    padding-bottom: 0;
+    height: 123px;
+    position: relative;
+}
+
+.panel-deadline {
+    color: #FFFFFF!important;
+    padding: 0;
+    text-align: center;
+    border-radius: 3px;
+    width: 300px;
+    height: 42px;
+}
+
+.panel-deadline-link {
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 20px;
+  }
+
+  &:hover {
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+  }
+}
+
+.panel-number {
+    font-size: $font-headline;
+    line-height: 1;
+    padding-bottom: 2px;
+    padding-top: 4px;
+}
+
+.panel-text {
+    line-height: 21px;
+    width: 278px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.panel-action {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.panel-card {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 5px;
+    display: block;
+}

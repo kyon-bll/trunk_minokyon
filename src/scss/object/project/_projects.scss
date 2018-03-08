@@ -1,0 +1,25 @@
+.p-project__manage {
+
+  &__project-title {
+    display: inline-block;
+    height: 33px;
+    font-size: $font-large-size;
+    font-weight: 500;
+  }
+
+  &__duplicate-button {
+    text-align: right;
+    display: inline-block;
+    float: right
+  }
+
+  &__danger-button {
+    margin-top: 10px;
+    text-align: right;
+
+    div {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}
