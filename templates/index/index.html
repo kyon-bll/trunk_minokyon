@@ -1,1 +1,4 @@
-you are {{ request.session.username }}
+<div>
+  you are {{ request.session.username }}
+</div>
+<a href="{% url 'index:logout' %}">logout</a>

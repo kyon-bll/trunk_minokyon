@@ -64,10 +64,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-
-                # github アカウント認証
-                'social_django.context_processors.backends',
-                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -129,6 +125,9 @@ USE_TZ = True
 INSTALLED_APPS += [
     'index',
 ]
+
+GITHUB_CLIENT_ID = 'e24236d1f8b042af6058'
+GITHUB_CLIENT_SECRET = '089b9b25d642e83c56460d05a3646f4153fd04d2'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_URL = '/static/'
