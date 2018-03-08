@@ -1,66 +1,9 @@
-<data value=""></data>{% extends 'html_head.html' %}
+{% extends 'html_head.html' %}
 
 {% block body %}
 
-  <div class="wrapper">
-    <aside class="sidebar" id="sidebar">
-      {% include '_parts/sidebar.html' %}
-    </aside>
-
-    <main class="main">
-      {{ view.debug }}
-      <div class="container padding0">
-        <div class="overwrite-bg">
-          <div class="col-xs-6">
-            {% block breadcrumb %}
-              {% include '_parts/breadcrumb.html' %}
-            {% endblock%}
-          </div>
-
-          <div class="col-xs-6">
-            {% include '_parts/navi.html' %}
-          </div>
-
-          <br>
-          <br>
-          <hr class="margint9">
-          <div class="container margin9">
-            {{ view.info }}
-            {% block extra_info %}{% endblock %}
-          </div><!-- /container -->
-        </div>
-        <hr>
-        <div>
-          {% include '_parts/message.html' %}
-
-          <div class="container margin0 padding9">
-            {% block content %}
-              {{ view.content }}
-            {% endblock content %}
-          </div><!-- /container -->
-        </div><!-- /container -->
-      </div><!-- /main -->
-
-    </main><!-- /wrapper -->
-
-
-
-    <main class="main">   <!-- 全体 -->
-
-      <div class="c-container--lead">
-        <div class="c-title">
-          <div class="c-bg c-bg__top">
-            たこさんのイラストとオーサカgeeker
-          </div>
-        </div>
-      </div>
-
-      <div class="c-container--btn">
-        <a href class="c-button">使ってみよか！</a>
-      </div>
-
-
-    </main>
-
+  <main class="main">   <!-- 全体 -->
+    {% block content %}{% endblock %}
+  </main>
 
 {% endblock body %}

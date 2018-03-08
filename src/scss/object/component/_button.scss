@@ -5,11 +5,10 @@
 
 .c-button {
   display: inline-block;
-  width: 200px;
-  height: 54px;
+  width: 60vw;
+  height: 10vh;
   text-align: center;
   text-decoration: none;
-  line-height: 54px;
   outline: none;
 
   position: relative;
@@ -17,7 +16,7 @@
   background-color: #fff;
   border: 2px solid #333;
   color: #333;
-  line-height: 50px;
+  line-height: 10vh;
   overflow: hidden;
   text-decoration: none;
 }
@@ -37,8 +36,8 @@
 .c-button:after {
   top: 0;
   left: 0;
-  width: 210px;
-  height: 60px;
+  width: 60vw;
+  height: 10vh;
 }
 
 .c-button:hover:after {

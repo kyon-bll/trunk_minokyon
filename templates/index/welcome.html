@@ -1,3 +1,16 @@
-ようこそ!!!
+{% extends 'base.html' %}
 
-<a href="{{ authorize_url }}">github login</a>
+{% block content %}
+  <div class="c-container--lead">
+    <div class="c-title">
+      <img class="c-bg c-bg__top" src="/static/img/trunk_top.png"></img>
+
+    </div>
+  </div>
+
+  <div class="c-container--btn">
+    <a  href="{{ authorize_url }}" class="c-button">
+      <div>使ってみよか！</div>
+    </a>
+  </div>
+{% endblock %}
