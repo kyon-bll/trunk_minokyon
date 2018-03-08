@@ -4,7 +4,10 @@ from .github_auth import github
 
 
 def create_user_contribution_json(username):
-    cmd = 'node index.js {} {}.json'.format(username)
+    cmd = 'node {scraper} {username} {output_dir}{username}.json'.format(
+        username=username,
+        scraper='github-contributions-scraper/index.js',
+        output_dir='user_contributions/')
     subprocess.call(cmd, shell=True)
 
 
