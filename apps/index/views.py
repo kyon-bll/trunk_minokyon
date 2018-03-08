@@ -4,6 +4,7 @@ from django.views import generic
 from .github_auth import github
 
 
+# 描画全部この子
 class IndexView(generic.TemplateView):
     template_name = 'index/index.html'
 
@@ -15,8 +16,14 @@ class IndexView(generic.TemplateView):
             return super().get(request, *args, **kwargs)
 
 
+# github から返ってきたコードを用いて、
+# access トークン取得
+# ユーザー名を セッション に保存
 def callback(request):
-    request.session['username'] = 'kyon'
+    code = request.GET.get('code')
+    auth_session = github.get_auth_session(data={'code': code})
+    github_response = auth_session.get('/user')
+    request.session['username'] = github_response.json()['login']
     return redirect('index:index')
 
 
