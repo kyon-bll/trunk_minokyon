@@ -7,7 +7,7 @@
       <img class="c-bg c-bg__rank" src="/static/img/rank_{{ view.geek_rank }}.png"></img>
       {{ view.geek_rank_name }}
       <span class="c-rank--point">
-        <a data-toggle="modal" data-target="#RankDescriptionModal"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+        <a data-toggle="modal" data-target="#RankDescriptionModal"><i class="fa fa-fw fa-question-circle-o" aria-hidden="true"></i></a>
       </span>
 
     </div>
@@ -16,9 +16,17 @@
     </div>
   </div>
 
+
+
   <div class="c-container--list">
 
+
     <div class="c-list">
+
+      <div class="c-list--title">
+        ギーカーチケット<a data-toggle="modal" data-target="#GeekerRankDescriptionModal"><i class="fa fa-fw fa-question-circle-o" aria-hidden="true"></i></a>
+      </div>
+
       <a data-toggle="modal" data-target="#KonamonModal">
         <div class="c-list--item">
 
@@ -26,19 +34,24 @@
 
         </div>
       </a>
-      <div class="c-list--item">
 
-        <p class="ribbon4 c-list--item__available"><i class="fa fa-fw fa-circle-o" aria-hidden="true"></i>オモロイ</p>
+      <a data-toggle="modal" data-target="#OmoroiModal">
+        <div class="c-list--item">
 
-      </div>
+          <p class="ribbon4 c-list--item__available"><i class="fa fa-fw fa-circle-o" aria-hidden="true"></i>オモロイ</p>
 
-      <div class="c-list--item">
-        
-        <p class="ribbon4 c-list--item__unavailable"><i class="fa fa-fw fa-times" aria-hidden="true"></i>アツマロ</p>
+        </div>
+      </a>
+      <a data-toggle="modal" data-target="#AtsumaroModal">
+        <div class="c-list--item">
 
-      </div>
+          <p class="ribbon4 c-list--item__unavailable"><i class="fa fa-fw fa-times" aria-hidden="true"></i>アツマロ</p>
+
+        </div>
+      </a>
 
     </div>
+
   </div>
 
   <!-- モーダル -->
@@ -47,7 +60,7 @@
     <div class="modal-dialog modal-margin">
 
       <div class="modal-content">
-        <div class="modal-header" style="font-size: 10vw">
+        <div class="modal-header" style="font-size: 8vw">
           ギークランクとは
         </div>
         <div class="modal-body">
@@ -57,11 +70,32 @@
           <img style="width: 100%;" src="/static/img/geek_rank.png"></img>
         </div>
 
-        
+
       </div>
 
     </div>
   </div>
+
+  <div class="modal fade" id="GeekerRankDescriptionModal">    <!-- ギーカーランク -->
+    <div class="modal-dialog modal-margin">
+
+      <div class="modal-content">
+        <div class="modal-header" style="font-size: 8vw">
+          ギーカーチケットとは
+        </div>
+        <div class="modal-body">
+          あんさんが github で草生やせば生やすほどギークポイントが増えおって、ぎょーさんなったらギークランクがあがるんや。<br/>
+          ギークランクがあがると、大阪での暮らしがどんどん便利にになるさかい、きばりや!<br/>
+          あ、そうそう。草生やせば生やすほどゆうても、最近一週間分だけを反映しとるでな、休まずに草生やしたってや!
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
 
   <div class="modal fade" id="KonamonModal">
     <div class="modal-dialog modal-margin">
@@ -71,50 +105,173 @@
         </div>
         <div class="modal-body">
           <img style="width: 10vw" src="/static/img/rank_{{ view.geek_rank }}.png"></img>
-          <span style="font-size: 6vw">{{ view.geek_rank_name }} </span>のあんさんは
+          <span style="font-size: 6vw">{{ view.geek_rank_name }} </span><span class="c-font-sm">のあんさんは</span>
           <br/><br/>
           <div style="font-size: 6vw">
             {% if view.geek_rank == 0 %}
-
+              なんもないで。
             {% elif view.geek_rank == 1 %}
-
+              たこやき50円引き!
             {% elif view.geek_rank == 2 %}
-              たこやき1個無料!
+              たこやき1個タダ!
             {% elif view.geek_rank == 3 %}
-
+              たこやき3個タダ!
             {% elif view.geek_rank == 4 %}
-
+              たこやき30分食べ放題!
             {% endif %}
 
           </div>
           <br/>
 
-          <li>おみせ：みのりたこやき</li>
-          <li>ばしょ：<a href="#">北区2018丁目3番地9</a></li>
+          <ul class="c-list-unstyled">
+            <li>おみせ：みのりたこやき</li>
+            <li>ばしょ：<a href="#">北区2018丁目3番地9</a></li>
+          </ul>
 
           <hr/>
           <hr/>
-          <Div>あしたは... おこのみやき!!</div>
+
+          <div>あしたは... おこのみやき!!</div>
+
           <hr/>
           <hr/>
           <div style="font-size: 2vw">
             {% if view.geek_rank == 0 %}
-
+              (ちなみに、次のギークランクやと、たこやき50円引き やってんで)
             {% elif view.geek_rank == 1 %}
-
+              (ちなみに、次のギークランクやと、たこやき1個タダ やってんで)
             {% elif view.geek_rank == 2 %}
-              (ちなみに、次のギークランクやと、たこやき3個無料やってんで)
+              (ちなみに、次のギークランクやと、たこやき3個タダ やってんで)
             {% elif view.geek_rank == 3 %}
-
+              (ちなみに、次のギークランクやと、たこやき30分食べ放題 やってんで)
             {% elif view.geek_rank == 4 %}
 
             {% endif %}
           </div>
         </div>
 
-        
+
       </div>
 
     </div>
   </div>
+
+  <div class="modal fade" id="OmoroiModal">
+    <div class="modal-dialog modal-margin">
+      <div class="modal-content">
+        <div class="modal-header" style="font-size: 10vw">
+          今日のオモロイ
+        </div>
+        <div class="modal-body">
+          <img style="width: 10vw" src="/static/img/rank_{{ view.geek_rank }}.png"></img>
+          <span style="font-size: 6vw">{{ view.geek_rank_name }} </span><span class="c-font-sm">のあんさんは</span>
+          <br/><br/>
+          <div style="font-size: 6vw">
+            {% if view.geek_rank == 0 %}
+              まだなんもないで。
+            {% elif view.geek_rank == 1 %}
+              通天閣入場料300円引き!
+            {% elif view.geek_rank == 2 %}
+              海遊館入館料半額!
+            {% elif view.geek_rank == 3 %}
+              海遊館1人分タダ!
+            {% elif view.geek_rank == 4 %}
+              海遊館2人分タダ!
+            {% endif %}
+
+          </div>
+          <br/>
+
+          <ul class="c-list-unstyled">
+            <li>おみせ：海遊館</li>
+            <li>ばしょ：<a href="#">港区海岸通1丁目1−10</a></li>
+          </ul>
+
+          <hr/>
+          <hr/>
+
+          <div>あしたは... USJ!!</div>
+
+          <hr/>
+          <hr/>
+          <div style="font-size: 2vw">
+            {% if view.geek_rank == 0 %}
+              (ちなみに、次のギークランクやと、海遊館300円引き やってんで)
+            {% elif view.geek_rank == 1 %}
+              (ちなみに、次のギークランクやと、海遊館半額 やってんで)
+            {% elif view.geek_rank == 2 %}
+              (ちなみに、次のギークランクやと、海遊館タダ やってんで)
+            {% elif view.geek_rank == 3 %}
+              (ちなみに、次のギークランクやと、海遊館2人分タダ やってんで)
+            {% elif view.geek_rank == 4 %}
+
+            {% endif %}
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="AtsumaroModal">
+    <div class="modal-dialog modal-margin">
+      <div class="modal-content">
+        <div class="modal-header" style="font-size: 10vw">
+          今日のアツマロ
+        </div>
+        <div class="modal-body">
+          <img style="width: 10vw" src="/static/img/rank_{{ view.geek_rank }}.png"></img>
+          <span style="font-size: 6vw">{{ view.geek_rank_name }} </span><span class="c-font-sm">のあんさんは</span>
+          <br/><br/>
+          <div style="font-size: 6vw">
+            {% if view.geek_rank == 0 %}
+              まだなんもないで。
+            {% elif view.geek_rank == 1 %}
+              まだなんもないで。
+            {% elif view.geek_rank == 2 %}
+              営業時間内利用　&　ドリンク1杯
+            {% elif view.geek_rank == 3 %}
+              営業時間内利用　&　ドリンク飲み放題
+            {% elif view.geek_rank == 4 %}
+              24時間無料　& ドリンク飲み放題
+            {% endif %}
+
+          </div>
+          <br/>
+
+          <ul class="c-list-unstyled">
+            <li>なまえ：さくらインターネット さん</li>
+            <li>ばしょ：<a href="#">北区大深町４−２０ グランフロント大阪タワーA 35F</a></li>
+          </ul>
+
+          <hr/>
+          <hr/>
+
+          <div>あしたは... TRUNK さん!!</div>
+
+          <hr/>
+          <hr/>
+          <div style="font-size: 2vw">
+            {% if view.geek_rank == 0 %}
+              (ちなみに、次の次のギークランクやと、営業時間内利用 & ドリンク1杯 やってんで)
+            {% elif view.geek_rank == 1 %}
+              (ちなみに、次のギークランクやと、営業時間内利用 & ドリンク1杯 やってんで)
+            {% elif view.geek_rank == 2 %}
+              (ちなみに、次のギークランクやと、営業時間内利用 & ドリンク飲み放題 やってんで)
+            {% elif view.geek_rank == 3 %}
+              (ちなみに、次のギークランクやと、24時間利用 & ドリンク飲み放題 やってんで)
+            {% elif view.geek_rank == 4 %}
+
+            {% endif %}
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
 {% endblock %}

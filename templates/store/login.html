@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div style="font-size: 5vw; padding: 5vw;">
+    <div class="login-title">
+      <ul class="list-inline">
+        <li>店舗ログイン</li>
+      </ul>
+    </div>
+    <div>
+      <form action="{% url 'store:login' %}" method="POST">
+        <div>
+          <table style='margin: auto'>
+            {{ form.as_table }}
+          </table>
+        </div>
+        
+
+        <br>
+        
+        <div>
+          <div class="c-container--btn">
+            <button type="submit" class="c-button">ログイン</button>
+          </div>
+        </div>
+        
+        <br>
+        
+        <input type="hidden" name="next" value={{ next }} />
+        {% csrf_token %}
+        
+      </form>
+    </div>
+    <a href="{% url 'store:regist' %}">店舗ユーザー登録</a>
+  </div>
+{% endblock %}

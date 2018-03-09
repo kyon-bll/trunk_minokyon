@@ -18,6 +18,8 @@ class IndexView(generic.TemplateView):
         else:
             self.username = request.session['username']
             self.contribution = utils.get_7days_user_contribution(self.username)
+            request.session['geek_rank_name'] = self.geek_rank_name
+            utils.create_qrcode_images(request)
             return super().get(request, *args, **kwargs)
 
     # context
