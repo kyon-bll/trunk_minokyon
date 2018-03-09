@@ -123,7 +123,9 @@
             {% elif view.geek_rank == 4 %}
               たこやき30分食べ放題!
             {% endif %}
-            <img style='height: 30vh;' src="/static/img/qrcodes/{{ view.username }}_コナモン.png"/>
+            {% if view.geek_rank %}            
+              <img style='height: 30vh;' src="/static/img/qrcodes/{{ view.username }}_コナモン.png"/>
+            {% endif %}
           </div>
           <br/>
 
@@ -182,7 +184,9 @@
             {% elif view.geek_rank == 4 %}
               海遊館2人分タダ!
             {% endif %}
-            <img style='height: 30vh;' src="/static/img/qrcodes/{{ view.username }}_オモロイ.png"/>
+            {% if view.geek_rank %}            
+              <img style='height: 30vh;' src="/static/img/qrcodes/{{ view.username }}_オモロイ.png"/>
+            {% endif %}
           </div>
           <br/>
 
@@ -241,7 +245,9 @@
             {% elif view.geek_rank == 4 %}
               24時間無料&ドリンク飲み放題
             {% endif %}
-            <img style='height: 30vh;' src="/static/img/qrcodes/{{ view.username }}_アツマロ.png"/>
+            {% if view.geek_rank %}
+              <img style='height: 30vh;' src="/static/img/qrcodes/{{ view.username }}_アツマロ.png"/>
+            {% endif %}
 
           </div>
           <br/>
