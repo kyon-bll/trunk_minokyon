@@ -65,22 +65,21 @@
 
   <div class="modal fade" id="KonamonModal">
     <div class="modal-dialog modal-margin">
-
       <div class="modal-content">
         <div class="modal-header" style="font-size: 10vw">
           今日のコナモン
         </div>
         <div class="modal-body">
           <img style="width: 10vw" src="/static/img/rank_{{ view.geek_rank }}.png"></img>
-          <span style="font-size: 6vw">{{ view.geek_rank_name }} </span>のアンタは
+          <span style="font-size: 6vw">{{ view.geek_rank_name }} </span>のあんさんは
           <br/><br/>
           <div style="font-size: 6vw">
             {% if view.geek_rank == 0 %}
 
             {% elif view.geek_rank == 1 %}
-              たこやき1個無料!
-            {% elif view.geek_rank == 2 %}
 
+            {% elif view.geek_rank == 2 %}
+              たこやき1個無料!
             {% elif view.geek_rank == 3 %}
 
             {% elif view.geek_rank == 4 %}
@@ -102,9 +101,9 @@
             {% if view.geek_rank == 0 %}
 
             {% elif view.geek_rank == 1 %}
-              (ちなみに、次のギークランクやと、たこやき3個無料やってんで)
-            {% elif view.geek_rank == 2 %}
 
+            {% elif view.geek_rank == 2 %}
+              (ちなみに、次のギークランクやと、たこやき3個無料やってんで)
             {% elif view.geek_rank == 3 %}
 
             {% elif view.geek_rank == 4 %}

@@ -45,7 +45,7 @@ class IndexView(generic.TemplateView):
         elif self.geek_rank == 1:
             return 'しょしんしゃぎーく'
         elif self.geek_rank == 2:
-            return 'そこそこぎーく'
+            return 'まあまあぎーく'
         elif self.geek_rank == 3:
             return 'いっちょまえぎーく'
         elif self.geek_rank == 4:
