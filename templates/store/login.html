@@ -2,44 +2,35 @@
 
 {% block content %}
   <div style="font-size: 5vw; padding: 5vw;">
-    <nav>
-      <div class="login-title">
-        <ul class="list-inline">
-          <li>店舗ログイン</li>
-          {% if form.errors %}
-            <!-- <p>ユーザー名 または パスワードが間違ってまーす(*^ω^*)</p> -->
-            <p>ユーザー名 または パスワードが正しくありません。</p>
-          {% endif %}
-        </ul>
-      </div>
-      <div>
-        <form action="{% url 'store:login' %}" method="POST">
-          <div>
-            <table>
-              {{ form.as_table }}
-            </table>
-          </div>
-          
+    <div class="login-title">
+      <ul class="list-inline">
+        <li>店舗ログイン</li>
+      </ul>
+    </div>
+    <div>
+      <form action="{% url 'store:login' %}" method="POST">
+        <div>
+          <table style='margin: auto'>
+            {{ form.as_table }}
+          </table>
+        </div>
+        
 
-          <br>
-          
-          <div>
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4">
-              <div class="c-container--btn">
-                <button type="submit" class="c-button">ログイン</button>
-              </div>
-            </div>
-            
-            <br>
-            
-            <input type="hidden" name="next" value={{ next }} />
-            {% csrf_token %}
-            
-            <div class="col-xs-4"></div>
+        <br>
+        
+        <div>
+          <div class="c-container--btn">
+            <button type="submit" class="c-button">ログイン</button>
           </div>
-        </form>
-      </div>
-    </nav>
+        </div>
+        
+        <br>
+        
+        <input type="hidden" name="next" value={{ next }} />
+        {% csrf_token %}
+        
+      </form>
+    </div>
+    <a href="{% url 'store:regist' %}">店舗ユーザー登録</a>
   </div>
 {% endblock %}

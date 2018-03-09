@@ -5,6 +5,7 @@ from django.contrib.auth.forms import AuthenticationForm
 
 urlpatterns = [
     url(r'^$', views.StoreIndexView.as_view(), name='index'),
+    url(r'^regist$', views.StoreUserRegistView.as_view(), name='regist'),
     url(r'^login/$',
         auth_views.login,
         {'template_name': 'store/login.html',

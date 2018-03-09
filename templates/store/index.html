@@ -1,22 +1,31 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <table class="table" style="font-size: 3vw">
-    <thead>
-      <tr>
-        <th>日付</th>
-        <th>ユーザ名</th>
-        <th>ギークランク</th>
-        <th>サービス種類</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <div style="font-size: 3vw; padding: 5vw;">
+    <div style='text-align: right'>
+      <span>
+        <a href="{% url 'store:logout' %}">ログアウト</a>
+      </span>
+    </div>
+    
+    <div>利用ユーザー履歴</div>
+    <table class="table" >
+      <thead>
+        <tr>
+          <th>日付</th>
+          <th>ユーザ名</th>
+          <th>ギークランク</th>
+          <th>サービス種類</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 {% endblock %}

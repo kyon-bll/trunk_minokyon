@@ -1,7 +1,10 @@
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+from django.core.urlresolvers import reverse_lazy
 from django.views import generic
+from django.contrib.auth.forms import UserCreationForm
+
 
 from .models import StoreLog
 
@@ -26,3 +29,9 @@ class StoreIndexView(generic.TemplateView):
             return redirect('store:index')
 
         return super().get(request, *args, **kwargs)
+
+
+class StoreUserRegistView(generic.CreateView):
+    template_name = 'store/regist.html'
+    form_class = UserCreationForm
+    success_url = reverse_lazy('store:index')

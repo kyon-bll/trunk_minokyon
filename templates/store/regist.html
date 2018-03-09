@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div style="font-size: 4.5vw; padding: 5vw;">
+    <div class="login-title">
+      <ul class="list-inline">
+        <li>店舗ユーザー登録</li>
+      </ul>
+    </div>
+    <div>
+      <form action="{% url 'store:regist' %}" method="POST">
+        <div>
+          <table style='margin: auto'>
+            <tr>
+              <th>{{ form.username.label }}:</th>
+              <td>
+                {{ form.username }} <br/>
+                <span>{{ form.username.errors }}</span>
+              </td>
+            </tr>
+            <tr>
+              <th>{{ form.password1.label }}:</th>
+              <td>
+                {{ form.password1 }} <br/>
+                <span>{{ form.password1.errors }}</span>
+              </td>
+            </tr>
+            <tr>
+              <th>{{ form.password2.label }}:</th>
+              <td>
+                {{ form.password2 }} <br/>
+                <span>{{ form.password2.errors }}</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+        <br>
+        
+        <div>
+          <div class="c-container--btn">
+            <button type="submit" class="c-button">登録</button>
+          </div>
+        </div>
+        
+        <br>
+        
+        <input type="hidden" name="next" value={{ next }} />
+        {% csrf_token %}
+        
+      </form>
+    </div>
+    <a href="{% url 'store:login' %}">店舗ログイン画面に戻る</a>
+  </div>
+{% endblock %}
