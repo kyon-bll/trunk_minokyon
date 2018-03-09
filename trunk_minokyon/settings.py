@@ -124,6 +124,7 @@ USE_TZ = True
 
 INSTALLED_APPS += [
     'index',
+    'store',
 ]
 
 GITHUB_CLIENT_ID = 'e24236d1f8b042af6058'
@@ -139,3 +140,6 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 sys.path.insert(0, os.path.join(BASE_DIR, 'modules'))
 
 ALLOWED_HOSTS = ['*']
+
+LOGIN_URL = '/store/login/'
+LOGIN_REDIRECT_URL = '/store/'
