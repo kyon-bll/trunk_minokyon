@@ -14,7 +14,7 @@
     background: #FFF;/*背景色*/
     color: black;/*文字色*/
     box-sizing: border-box;
-    margin: 20px;
+    margin: 50px;
 }
 
 .ribbon4:after {
@@ -33,12 +33,21 @@
     border-style: solid;
 }
 
+.c-list {
 
-.c-list--item__unavailable {
-  background-color: #a9a9a9;
-}
+  &--title {
+    margin-top: 30px;
+    font-size: 8vw;
 
+  }
 
-.c-list-unstyled {
-  list-style: none;
+  &c-list--item__unavailable {
+    background-color: #a9a9a9;
+  }
+
+  &-unstyled {
+    list-style: none;
+
+  }
+
 }
