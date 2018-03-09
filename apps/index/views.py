@@ -29,7 +29,7 @@ class IndexView(generic.TemplateView):
 
     @property
     def geek_rank(self):
-        if self.geek_point == 0:
+        if self.geek_point == 1:
             return 0  # 0
         elif self.geek_point < 5000:
             return 1  # 1 - 15

@@ -42,13 +42,17 @@
 
         </div>
       </a>
-      <a data-toggle="modal" data-target="#AtsumaroModal">
+      {% if view.geek_rank == 0 or view.geek_rank == 1 %}
         <div class="c-list--item">
-
           <p class="ribbon4 c-list--item__unavailable"><i class="fa fa-fw fa-times" aria-hidden="true"></i>アツマロ</p>
-
         </div>
-      </a>
+      {% else %}
+        <a data-toggle="modal" data-target="#AtsumaroModal">
+          <div class="c-list--item">
+            <p class="ribbon4 c-list--item__available"><i class="fa fa-fw fa-circle-o" aria-hidden="true"></i>アツマロ</p>
+          </div>
+        </a>
+      {% endif %}
 
     </div>
 
@@ -84,10 +88,10 @@
           ギーカーチケットとは
         </div>
         <div class="modal-body">
-          あんさんが github で草生やせば生やすほどギークポイントが増えおって、ぎょーさんなったらギークランクがあがるんや。<br/>
-          ギークランクがあがると、大阪での暮らしがどんどん便利にになるさかい、きばりや!<br/>
-          あ、そうそう。草生やせば生やすほどゆうても、最近一週間分だけを反映しとるでな、休まずに草生やしたってや!
-
+          ギークランクに応じて、色んなオトクなサービスに利用できるチケットが使えるで <br/><br/>
+          <li>コナモン： 大阪のウマいコナモンがお得に食べられるで!</li>
+          <li>オモロイ： 日変わりのオモロイ大阪の楽しみを提供するで</li>
+          <li>アツマレ： ギークポイント 5000 以上でタダで使えるコワーキングスペースや!</li>
         </div>
 
 
@@ -119,7 +123,7 @@
             {% elif view.geek_rank == 4 %}
               たこやき30分食べ放題!
             {% endif %}
-
+            <img style='height: 30vh;' src="/static/img/qrcodes/{{ view.username }}_コナモン.png"/>
           </div>
           <br/>
 
@@ -178,7 +182,7 @@
             {% elif view.geek_rank == 4 %}
               海遊館2人分タダ!
             {% endif %}
-
+            <img style='height: 30vh;' src="/static/img/qrcodes/{{ view.username }}_オモロイ.png"/>
           </div>
           <br/>
 
@@ -231,19 +235,20 @@
             {% elif view.geek_rank == 1 %}
               まだなんもないで。
             {% elif view.geek_rank == 2 %}
-              営業時間内利用　&　ドリンク1杯
+              営業時間内利用&ドリンク1杯
             {% elif view.geek_rank == 3 %}
-              営業時間内利用　&　ドリンク飲み放題
+              営業時間内利用&ドリンク飲み放題
             {% elif view.geek_rank == 4 %}
-              24時間無料　& ドリンク飲み放題
+              24時間無料&ドリンク飲み放題
             {% endif %}
+            <img style='height: 30vh;' src="/static/img/qrcodes/{{ view.username }}_アツマロ.png"/>
 
           </div>
           <br/>
 
           <ul class="c-list-unstyled">
             <li>なまえ：さくらインターネット さん</li>
-            <li>ばしょ：<a href="#">北区大深町４−２０ グランフロント大阪タワーA 35F</a></li>
+            <li>ばしょ：<a href="#">グランフロント大阪タワーA 35F</a></li>
           </ul>
 
           <hr/>
