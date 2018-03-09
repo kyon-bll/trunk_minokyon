@@ -74,7 +74,20 @@
           <img style="width: 10vw" src="/static/img/rank_{{ view.geek_rank }}.png"></img>
           <span style="font-size: 6vw">{{ view.geek_rank_name }} </span>のアンタは
           <br/><br/>
-          <div style="font-size: 6vw">たこやき1個無料!</div>
+          <div style="font-size: 6vw">
+            {% if view.geek_rank == 0 %}
+
+            {% elif view.geek_rank == 1 %}
+              たこやき1個無料!
+            {% elif view.geek_rank == 2 %}
+
+            {% elif view.geek_rank == 3 %}
+
+            {% elif view.geek_rank == 4 %}
+
+            {% endif %}
+
+          </div>
           <br/>
 
           <li>おみせ：みのりたこやき</li>
@@ -85,7 +98,19 @@
           <Div>あしたは... おこのみやき!!</div>
           <hr/>
           <hr/>
-          <div style="font-size: 2vw">(ちなみに、次のギークランクやと、たこやき3個無料やってんで)</div>
+          <div style="font-size: 2vw">
+            {% if view.geek_rank == 0 %}
+
+            {% elif view.geek_rank == 1 %}
+              (ちなみに、次のギークランクやと、たこやき3個無料やってんで)
+            {% elif view.geek_rank == 2 %}
+
+            {% elif view.geek_rank == 3 %}
+
+            {% elif view.geek_rank == 4 %}
+
+            {% endif %}
+          </div>
         </div>
 
         
