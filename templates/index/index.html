@@ -19,13 +19,13 @@
   <div class="c-container--list">
 
     <div class="c-list">
+      <a data-toggle="modal" data-target="#KonamonModal">
+        <div class="c-list--item">
 
-      <div class="c-list--item">
+          <p class="ribbon4 c-list--item__available"><i class="fa fa-fw fa-circle-o" aria-hidden="true"></i>コナモン</p>
 
-        <p class="ribbon4 c-list--item__available"><i class="fa fa-fw fa-circle-o" aria-hidden="true"></i>コナモン</p>
-
-      </div>
-
+        </div>
+      </a>
       <div class="c-list--item">
 
         <p class="ribbon4 c-list--item__available"><i class="fa fa-fw fa-circle-o" aria-hidden="true"></i>オモロイ</p>
@@ -47,13 +47,45 @@
     <div class="modal-dialog modal-margin">
 
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header" style="font-size: 10vw">
           ギークランクとは
         </div>
         <div class="modal-body">
           あんさんが github で草生やせば生やすほどギークポイントが増えおって、ぎょーさんなったらギークランクがあがるんや。<br/>
           ギークランクがあがると、大阪での暮らしがどんどん便利にになるさかい、きばりや!<br/>
           あ、そうそう。草生やせば生やすほどゆうても、最近一週間分だけを反映しとるでな、休まずに草生やしたってや!
+          <img style="width: 100%;" src="/static/img/geek_rank.png"></img>
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="KonamonModal">
+    <div class="modal-dialog modal-margin">
+
+      <div class="modal-content">
+        <div class="modal-header" style="font-size: 10vw">
+          今日のコナモン
+        </div>
+        <div class="modal-body">
+          <img style="width: 10vw" src="/static/img/rank_{{ view.geek_rank }}.png"></img>
+          <span style="font-size: 6vw">{{ view.geek_rank_name }} </span>のアンタは
+          <br/><br/>
+          <div style="font-size: 6vw">たこやき1個無料!</div>
+          <br/>
+
+          <li>おみせ：みのりたこやき</li>
+          <li>ばしょ：<a href="#">北区2018丁目3番地9</a></li>
+
+          <hr/>
+          <hr/>
+          <Div>あしたは... おこのみやき!!</div>
+          <hr/>
+          <hr/>
+          <div style="font-size: 2vw">(ちなみに、次のギークランクやと、たこやき3個無料やってんで)</div>
         </div>
 
         
