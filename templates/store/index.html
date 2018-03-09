@@ -1,30 +1,32 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div style="font-size: 3vw; padding: 5vw;">
+  <div style="font-size: 3vw; padding: 3vw;">
     <div style='text-align: right'>
-      <span>
-        <a href="{% url 'store:logout' %}">ログアウト</a>
-      </span>
+      <a href="{% url 'index:index' %}">サービストップへ</a>
+      <a href="{% url 'store:logout' %}">ログアウト</a>
     </div>
     
+    <div>店舗ユーザー名：{{ user }}</div>
     <div>利用ユーザー履歴</div>
     <table class="table" >
       <thead>
         <tr>
-          <th>日付</th>
-          <th>ユーザ名</th>
-          <th>ギークランク</th>
-          <th>サービス種類</th>
+          <th style="text-align: center;">日付</th>
+          <th style="text-align: center;">ユーザ名</th>
+          <th style="text-align: center;">ギークランク</th>
+          <th style="text-align: center;">サービス種類</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+        {% for data in user.logs.all %}
+          <tr>
+            <td>{{ data.created_at }}</td>
+            <td>{{ data.username }}</td>
+            <td>{{ data.geek_rank }}</td>
+            <td>{{ data.kind }}</td>
+          </tr>
+        {% endfor %}
       </tbody>
     </table>
   </div>
