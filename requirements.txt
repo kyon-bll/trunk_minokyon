@@ -12,7 +12,7 @@ erajp==0.0.4
 et-xmlfile==1.0.1
 flake8==3.4.1
 google-api-python-client==1.6.2
-httplib2==0.9
+httplib2==0.18.0
 idna==2.6
 ipython==6.1.0
 ipython-genutils==0.2.0
